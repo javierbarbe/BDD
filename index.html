@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Examen HTML</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="js.js"></script>
+    </head>
+    <body>
+        <form action="form.php" method="get" name="myForm">
+
+               
+            <fieldset id="main">
+                    <h1>Examen LM primera evaluación DAM</h1>
+                    <div id="bloque">
+                        <fieldset id="topRight">
+                            <legend>Direccion</legend>
+
+                           
+                           <input type="text" name="direccion1" size="30"> <br>
+                           Calle, numero, piso, puerta <br>
+                           
+                           
+                           <input type="text" name="codigo_postal"> <input type="text" name="municipio"><br>
+                                   
+                           Codigo Postal		Municipio <br>
+
+                                   <select name="">
+                                           <option value=""></option>    
+                                           <option value="Pais 1">Pais 1</option>
+                                           <option value="Pais 2">Pais 2</option>
+                                           <option value="Pais 3">Pais 3</option>
+                                       </select>
+                                   <select name="">
+                                           <option value=""></option>    
+                                           <option value="Provincia 1">Provincia 1</option>
+                                           <option value="Provincia 2">Provincia 2</option>
+                                           <option value="Provincia 3">Provincia 3</option>
+                                       </select> <br>
+                                       Provincia Pais
+                       </fieldset>    
+                        <fieldset id="topLeft">
+                                <legend>Nombre y apellidos</legend>
+
+                                <input type="text" name="name" size="30"> <br>
+                                Nombre <br>
+                                <input type="text" name="surname" size="30"> <br>
+                                Apellidos <br>
+                                <input type="text" name="dni" id="dni" value="" size="30" onblur="checkDni()"> <br>
+                                DNI
+                            </fieldset> 
+                <hr>
+                              
+                            </div>
+                        <div id="bloque">
+                            <fieldset id="midRight">
+                                <legend>Telefonos</legend>
+                                <input type="text" name="fijo"> <input type="text" name="movil"> <br>
+                                Fijo Movil
+                        </fieldset>
+                            <fieldset id="midLeft">
+                            <legend>Correo electronico</legend>
+                            <input type="text" name="email"> <br>
+                            Email
+                        </fieldset>
+               <hr>
+                
+                    </div>
+                    <fieldset id="lowRight">
+                        <legend>Estudios anteriores</legend>
+                        <input type="checkbox" name="Universiadd"> Universiadd<br>
+                        <input type="checkbox" name="Bachillerato"> Bachillerato <br>
+                        <input type="checkbox" name="Grado Medio"> Grado Medio
+                </fieldset>
+                
+                    <div id="bloque">
+                    <fieldset id="lowLeft">
+                            <legend>Turno</legend>
+                            <input type="radio" name="turno" value="manana"> Mañana<br>
+                            <input type="radio" name="turno" value="tarde"> Tarde
+                    </fieldset>
+                    </div>
+                    
+                    
+                    <input type="submit" id="noBorder" value="Guardar">
+                    <input type="reset" id="noBorder" value="Limpiar">
+                   
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
