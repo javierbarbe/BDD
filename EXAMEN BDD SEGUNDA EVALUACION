@@ -1,0 +1,4 @@
+create TABLESPACE EXAM DATAFILE 'C:\tablespaces\EXA01.DBF'    
+                       SIZE 90K autoextend on next 65 k maxsize 350k
+                             ,   'C:\EXA01.DBF' 
+                            SIZE 90K autoextend on next 65 k maxsize 350k;
