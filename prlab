@@ -1,0 +1,37 @@
+package trimestre2;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class DateClass {
+
+	public static void main(String[] args) {
+
+		Date mifecha=new Date();
+		System.out.println(mifecha.getDate()+" HOY ES DIA DIEZ");
+		System.out.println(mifecha.getYear()+" EL AÑO DA 1900 MENOS");
+		Calendar calendario= Calendar.getInstance(); // generando el objeto del objeto estatico calendar
+		calendario.set(1980, 5, 16); // cambio la fecha 
+//		System.out.println(calendario.getTimeZone());
+		int anio= calendario.get(calendario.YEAR);
+		System.out.println(anio); //compruebo de que el año lo ha cambiado
+		SimpleDateFormat miformato=new SimpleDateFormat("MM-yyyy-dd HH:mm:ss E");
+		Date d = Calendar.getInstance().getTime();
+		miformato.format(d);
+		d.toString();
+//		SimpleDateFormat miformato2=new SimpleDateFormat("MM-yyyy-dd ");//crear un patron de fechas
+//		System.out.println(miformato.format(mifecha)); //el patron funciona bien si el objeto es tipo Date??
+//		mifecha.setDate(24); // cambio el dia a proposito pàra verificar si la premisa anterior es cierta
+//		System.out.println(miformato.format(calendario.YEAR)+" al haber cambiado con calendario.set pone la fecha 1970-1-1" ); // no admite el objeto calendario... tiene que ser date o calendario.DATE/
+//		//calendario. algo 
+//		System.out.println(miformato.format(Calendar.ALL_STYLES)+" esto es el allstyles");// 
+//		System.out.println(miformato.format(mifecha)); // comprobacion de que el formato funciona solamente con el Objeto Date
+//		System.out.println(anio);
+//		System.out.println(miformato2.format(mifecha)); //usando el formato 2 mes-año-dia
+//		SimpleDateFormat co= new SimpleDateFormat();
+//		System.out.println(co.getTimeZone());// imprime la zona...pero un chorizo 
+//		co.setTimeZone(null);
+	}
+
+}
